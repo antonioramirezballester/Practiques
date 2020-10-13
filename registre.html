@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>registre_html</title>
+</head>
+<body>
+    <h1>Exercici, formulari de registre</h1>
+    <form action="registre.html" method="get">
+        <div>
+            <label for="idNom">Nom</label>
+            <input name="nom" id="idNom" type="text" required>
+            <label for="idLlinatges">Llinatges</label>
+            <input name="llinatges" id="idLlinatges" type="text" required>
+        </div>
+        <label for="idRadio-home">Home:</label>
+        <input name="genere" id="idRadio-home" type="radio" value="home">
+        <label for="idRadio-dona">Dona:</label>
+        <input name="genere" id="idRadio-dona" type="radio" value="dona">
+        <label for="idRadio-altre">Altre:</label>
+        <input name="genere" id="idRadio-altre" type="radio" value="altre">
+        <div>
+            <label for="idEmail">Email:</label>
+            <input type="email" name="email" id="idEmail" placeholder="El teu mail" required>
+            <label for="idContrasenya">Contrasenya:</label>
+            <input type="password" name="contrasenya" id="idContrasenya" minlength="5" maxlength="10" required>
+        </div>
+        <label for="idData-de-naixement">Data de naixement:</label>
+        <input type="date" name="data-de-naixement" id="idData-de-naixement" required>
+        <div>
+            <label for="idCondicions">Estic d'acord amb els termes i condicions:</label>
+            <input type="checkbox" name="condicions" id="idCondicions" required>
+        </div>
+        <button type="submit" name="submit">submit</button>
+    </form>
+</body>
+</html>
